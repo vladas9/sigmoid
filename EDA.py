@@ -1,7 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import mplcursors
 
 # 1. Load the dataset
 data = pd.read_csv('data\\new_data4.csv')
