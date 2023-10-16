@@ -17,9 +17,9 @@ print(data.isnull().sum())
 # 4. Visualize the distribution of the Outcome variable
 sns.countplot(data['Outcome'])
 plt.title('Distribution of Outcome (Diabetes)')
-plt.savefig('img\\Outcome.png')  # Save the plot
+plt.savefig('img\\Outcome.png') # Save the plot
 plt.close()  # Close the plot to prevent it from displaying
-#plt.show()
+plt.show()
 
 # 5. Distribution of continuous features
 continuous_features = ['Pregnancies', 'BMI', 'Insulin', 'Age']  # just a few for demonstration
@@ -30,7 +30,7 @@ for feature in continuous_features:
     #mplcursors.cursor(hover=True)
     plt.savefig(f'img\\{feature}_Distribution.png')  # Save the plot
     plt.close()  # Close the plot to prevent it from displaying
-    #plt.show()
+    plt.show()
 
 # 6. Correlation heatmap to see how features correlate with each other and with the target
 corr_matrix = data.corr()
@@ -40,11 +40,11 @@ plt.title('Correlation Heatmap')
 #mplcursors.cursor(hover=True) 
 plt.savefig('img\\Correlation_Heatmap.png')  # Save the plot
 plt.close()  # Close the plot to prevent it from displaying
-#plt.show()
+plt.show()
 
 # 7. Pairplot to visualize pairwise relationship and distribution
 sns.pairplot(data, hue='Outcome')
 plt.savefig('img\\Outcome_relationship.png')  # Save the plot
 plt.close()  # Close the plot to prevent it from displaying
-#plt.show()
+plt.show()
 

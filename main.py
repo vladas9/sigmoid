@@ -27,17 +27,17 @@ print(f"Accuracy: {accuracy * 100:.2f}%")
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 
 # 2. Get user input for prediction
-#input_data = {}
-#for col in X.columns:
+# input_data = {}
+# for col in X.columns:
 #    input_data[col] = [float(input(f"Enter {col}: "))]
 
-#user_df = pd.DataFrame(input_data)
+# user_df = pd.DataFrame(input_data)
 
 # 4. Predict using user input
-#prediction = model.predict(user_df)
-#if prediction[0] == 1:
+# prediction = model.predict(user_df)
+# if prediction[0] == 1:
 #    print("The patient is likely to have diabetes.")
-#else:
+# else:
 #    print("The patient is unlikely to have diabetes.")
 
 # 5. Visualize the model (like feature importance)
@@ -47,4 +47,3 @@ plt.xlabel('Feature Importance Score')
 plt.ylabel('Features')
 plt.title('Feature Importance using XGBoost')
 plt.show()
-
