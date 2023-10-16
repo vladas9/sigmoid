@@ -5,8 +5,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import matplotlib.pyplot as plt
 
 # 1. Load data from a CSV
-df = pd.read_csv('data\\new_data.csv')  # Replace 'your_data_file.csv' with your filename
-
+df = pd.read_csv('data\\new_data.csv') 
 # Splitting the data into features and target
 X = df.drop(columns='Outcome')
 y = df['Outcome']
