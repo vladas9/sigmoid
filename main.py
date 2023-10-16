@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import matplotlib.pyplot as plt
 
 # 1. Load data from a CSV
-df = pd.read_csv('data\\new_data4.csv')  # Replace 'your_data_file.csv' with your filename
+df = pd.read_csv('data\\new_data.csv')  # Replace 'your_data_file.csv' with your filename
 
 # Splitting the data into features and target
 X = df.drop(columns='Outcome')
@@ -39,7 +39,7 @@ print("\nClassification Report:\n", classification_report(y_test, y_pred))
 #    print("The patient is likely to have diabetes.")
 # else:
 #    print("The patient is unlikely to have diabetes.")
-
+model.save_model('xgboost_model.json')
 # 5. Visualize the model (like feature importance)
 feature_importance = model.feature_importances_
 plt.barh(X.columns, feature_importance)

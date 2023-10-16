@@ -25,4 +25,4 @@ data['Insulin'].fillna(data[col].median(), inplace=True)
 # for col in cols_noAge:
 #     data[col].fillna(data[col].mean(), inplace=True)
 # Write the modified data back to a new CSV
-data.to_csv('data\\new_data4.csv', index=False)
+data.to_csv('data\\new_data.csv', index=False)

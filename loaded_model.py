@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 1. Load data from a CSV
-df = pd.read_csv('data\\new_data4.csv')
+df = pd.read_csv('data\\new_data.csv')
 
 # 2. Splitting the data into features and target
 X = df.drop(columns='Outcome')
